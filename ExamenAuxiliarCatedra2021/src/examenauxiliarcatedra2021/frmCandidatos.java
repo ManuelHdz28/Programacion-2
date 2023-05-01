@@ -11,6 +11,7 @@ public class frmCandidatos extends javax.swing.JFrame {
         codigo = 1;
         txtCodigo.setText(""+codigo);
         txtNombre.requestFocus(); //pasar el control a este objeto
+        txtNombre.setText(txtNombre.getText().toUpperCase());
     }
 
     @SuppressWarnings("unchecked")
@@ -221,6 +222,9 @@ public class frmCandidatos extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+    
+    
+    
     private void limpiarControles(){
     
         codigo = codigo + 1;
@@ -290,7 +294,7 @@ public class frmCandidatos extends javax.swing.JFrame {
                                 throw new AssertionError();
                         }
                            tblCandidatos.setValueAt(txtCodigo.getText(), (codigo - 1), 0);
-                           tblCandidatos.setValueAt(txtNombre.getText(), (codigo - 1), 1);
+                           tblCandidatos.setValueAt(txtNombre.getText().toUpperCase(), (codigo - 1), 1);
                            tblCandidatos.setValueAt(puntos, (codigo - 1), 2);
                            JOptionPane.showMessageDialog(null, "Candidato Ingresado con Exito");
                            limpiarControles();
