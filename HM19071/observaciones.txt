@@ -1,0 +1,6 @@
+Ponderaciones:
+Interfaz: 25%  2.5
+Mecanismo de jugador de inicio y reiniciar juego: 25%  2.5
+Mecanismo de una jugada a ala vez por jugador: 25%  2.5
+Determinar ganador o empate: 25% 2.5 Aparece un mensaje de empate que no corresponde con lo que sucede y tampoco lo 'calcula'cuando corresponde
+Calificación: 9.0
